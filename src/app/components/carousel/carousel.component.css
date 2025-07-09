@@ -1,0 +1,164 @@
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.transition {
+  transition: transform 0.5s ease-in-out;
+}
+.carousal-img{
+  width: 350px;
+}
+.home-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/assets/external/home-screen-3.png);
+}
+.home-img-content {
+  width: 100%;
+  padding: 1rem;
+}
+.home-img-text-1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+.font-24 {
+  font-size: 1.25rem;
+}
+
+.btn-blue {
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: rgba(0, 26, 93, 1);
+  color: white;
+  border: none;
+}
+
+.dot-box {
+  bottom: 1rem;
+}
+
+.dr-name-text {
+  color: rgba(17, 40, 75, 1);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.ul-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.ul-text-color {
+  color: rgba(238, 48, 145, 1);
+}
+
+@media (min-width: 768px) {
+  .home-img-text-1 {
+    font-size: 28px;
+  }
+  .home-img-content {
+    width: 60%;
+    padding-left: 3rem;
+  }
+  .btn-blue {
+    font-size: 30px;
+    padding: 6px 12px;
+  }
+  .font-24 {
+    font-size: 1.25rem;
+  }
+  .dr-name-text {
+    font-size: 50px;
+    text-align: left;
+  }
+  .ul-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-image {
+    background-image: linear-gradient(to right bottom, #00a8ff24, #1d799c69);
+    position: relative;
+    padding: 0px 1.5rem !important;
+  }
+  .home-image-container {
+    min-height: 430px;
+  }
+  .info-wrapper {
+    position: relative;
+    transform: translateY(25%);
+  }
+  .bg-black {
+    width: 100%;
+  }
+  .ul-text {
+    margin: 0px;
+  }
+  .carousal-img {
+    width: 450px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-img-text-1 {
+    font-size: 28px;
+  }
+  .home-img-content {
+    width: 45%;
+    padding-left: 3rem;
+  }
+  .btn-blue {
+    font-size: 30px;
+    padding: 6px 12px;
+  }
+  .font-24 {
+    font-size: 1.25rem;
+  }
+  .dr-name-text {
+    font-size: 50px;
+    text-align: left;
+  }
+  .ul-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .dr-name-text {
+    font-size: 30px;
+  }
+  .ul-text {
+    font-size: 20px;
+  }
+  .btn-blue {
+    font-size: 24px;
+    padding: 5px 10px;
+  }
+  .carousal-img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .dr-name-text {
+    font-size: 40px;
+  }
+  .ul-text {
+    font-size: 24px;
+  }
+  .btn-blue {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+  .carousal-img {
+    width: 300px;
+  }
+}

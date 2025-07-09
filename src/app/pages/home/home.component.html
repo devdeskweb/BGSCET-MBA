@@ -1,0 +1,307 @@
+<div class="home-page d-flex flex-column w-100">
+  <app-carousel class="d-none d-md-block"></app-carousel>
+  <div class="d-flex flex-column justify-content-center align-items-center p-4 px-sm-0 py-sm-4 d-md-none">
+    <div class="home-profile-box d-flex gap-2 bg-primary-blue rounded-4 py-4 px-2">
+      <div class="home-profile d-flex flex-column gap-4 px-2" style="width: 80%;">
+        <div class="home-profile-top d-flex gap-4">
+          <div class="circle">
+            <div class="dr-circle">
+            </div>
+          </div>
+          <div class="home-profile-content text-white">
+            <div class="heading text-nowrap">Dr. Sachin Subbaraya</div>
+            <div class="sub-heading"> Experienced General & Laparoscopic Surgeon</div>
+          </div>
+        </div>
+        <div class="home-profile-bottom d-flex justify-content-between rounded-4 p-2 p-sm-3 text-white">
+          <div class="timings-font">Monday To Saturday</div>
+          <div class="border-start border-white px-sm-4 p-3"></div>
+          <div class="timings-font">9.00am-6.00pm</div>
+        </div>
+      </div>
+      <div class="d-flex flex-column gap-3 px-2">
+        <a [href]="'tel:' + mobile">
+          <div class="circle d-flex justify-content-center align-items-center">
+            <img src="assets/external/phone.png" class="phone-img"/>
+          </div>
+        </a>
+        <a [href]="'https://wa.me/' + mobile" target="_blank">
+          <div class="circle d-flex justify-content-center align-items-center">
+            <img src="assets/external/whatsappicon.png" class="whatsapp-img"/>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-2 justify-content-center align-items-center home-img-content">
+      <div class="home-img-text-1">
+        Excellence in General & <br />
+        Gastrointestinal Surgery
+      </div>
+      <div class="bg-primary-blue" style="width: 70%; height: 2px"></div>
+      <div class="home-text-2">
+        Providing advanced laparoscopic and laser treatments with precision
+        and care.
+      </div>
+      <div class="my-2">
+        <button
+          class="btn-blue text-white"
+          (click)="onBookAnAppointmentBtnClick()"
+        >
+          Book an Appointment
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <div class="stats-section d-flex justify-content-around align-items-center p-3">
+      <div class="d-flex flex-column justify-content-center align-items-center w-25">
+        <div class="stat-value d-flex justify-content-center align-items-center">
+          <div class="college-icon"></div>
+        </div>
+        <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center w-25">
+        <div class="stat-value d-flex justify-content-center align-items-center">
+          <div class="college-icon"></div>
+        </div>
+        <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center w-25">
+        <div class="stat-value d-flex justify-content-center align-items-center">
+          <div class="graduation-icon"></div>
+        </div>
+        <div class="stat-label text-center">Candidates to clear PGCET/KMAT/MAT/CAT</div>
+      </div>
+    </div>
+  <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div
+    class="px-4 py-5 px-md-5 about-section-home d-flex flex-column justify-content-center gap-4 align-items-center"
+  >
+    <div
+      class="d-flex flex-column gap-2 justify-content-center align-items-center"
+    >
+      <div class="section-heading text-primary-blue">About the Institute</div>
+      <div class="bg-primary-blue" style="width: 100%; height: 3px"></div>
+    </div>
+    <div class="d-flex flex-column gap-4 align-items-center" style="width: 80%;">
+      <div class="about-doctor-title text-center">
+        Dr. Sachin Subbaraya - Experienced General & Laparoscopic Surgeon
+      </div>
+      <div
+        class="d-flex flex-column-reverse flex-md-row gap-4 justify-content-center align-items-center w-100"
+      >
+        <div class="about-doctor-text w-100 w-md-50 text-md-start">
+          <p>
+            Dr. Sachin Subbaraya is an accomplished General and Laparoscopic Surgeon with over a decade of experience in advanced surgical procedures. After earning his MBBS and MS in General Surgery from the prestigious MS Ramaiah Institute, he began is career as a Senior Resident at Apollo Hospital. Currently, he serves as an Associate Consultant at Manipal Hospital where he specializes in minimally invasive surgical techniques.
+          </p>
+          <p>
+            His expertise spans a wide range of abdominal conditions, with a focus on laparoscopic gallbladder stone removal, appendectomy, hernia repair, and laser proctology for varicose veins and anorectal diseases. With a commitment to using cutting-edge technology, Dr. Sachin ensures minimal recovery time, reduced scarring, and superior surgical outcomes for his patients.
+          </p>
+        </div>
+        <img
+          src="/assets/external/dr-sachin.png"
+          alt="Dr. Sachin Subbaraya"
+          class="about-doctor-img"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex flex-column gap-4 justify-content-center align-items-center py-5"
+  >
+    <div class="d-flex flex-column gap-2 align-items-center">
+      <div class="section-heading text-center">
+        Expertise in Advanced and Minimal <br />
+        <span class="text-primary-pink">Access Surgeries</span>
+      </div>
+      <div class="bg-primary-blue" style="width: 50%; height: 4px"></div>
+    </div>
+    <div class="row w-100 px-4">
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+        <img
+          src="/assets/external/rectangle161276-zmz-600w.png"
+          alt="Additional Procedures"
+          class="img-fluid procedure-card-image img-hvr"
+        />
+        <div class="text-center">
+          <span class="procedure-title text-primary-pink"
+            >Additional Procedures</span
+          >
+          <ul class="list-unstyled procedure-list-item mt-2">
+            <li>Gallbladder Stone Removal</li>
+            <li>Appendectomy</li>
+            <li>Hernia Repair</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+        <img
+          src="/assets/external/rectangle141276-usz-600w.png"
+          alt="Laparoscopic Surgeries"
+          class="img-fluid procedure-card-image img-hvr"
+        />
+        <div class="text-center">
+          <span class="procedure-title text-primary-pink"
+            >Laparoscopic Surgeries</span
+          >
+          <ul class="list-unstyled procedure-list-item mt-2">
+            <li>Gallbladder Stone Removal</li>
+            <li>Appendectomy</li>
+            <li>Hernia Repair</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+        <img
+          src="/assets/external/rectangle151276-db0u-600w.png"
+          alt="Laser Procedures"
+          class="img-fluid procedure-card-image img-hvr"
+        />
+        <div class="text-center">
+          <span class="procedure-title text-primary-pink"
+            >Laser Procedures</span
+          >
+          <ul class="list-unstyled procedure-list-item mt-2">
+            <li>Gallbladder Stone Removal</li>
+            <li>Appendectomy</li>
+            <li>Hernia Repair</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a
+      href="https://en.wikipedia.org/wiki/Digestive_system_surgery"
+      target="_blank"
+      class="text-center text-decoration-none"
+    >
+      <button class="btn-secondary-pink text-white fw-bold">Learn More</button>
+    </a>
+  </div>
+  <div class="cta-banner my-4">
+    <div class="cta-banner-title text-white">
+      Schedule an Appointment for <br />
+      a Free Consultation With <br />
+      <span class="text-primary-pink">
+        the Best Gastrointestinal Surgery in Bangalore
+      </span>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 justify-content-center py-1 p-lg-4 home-image-grid">
+    <div class="row g-2 w-100 p-lg-4">
+      <div class="col-6 p-lg-2">
+        <img
+          src="/assets/external/home-img-1.png"
+          alt="Image 1"
+          class="img-fluid mb-2 img-hvr"
+        />
+        <div class="row g-2 p-lg-2">
+          <div class="col-6 p-lg-2">
+            <img
+              src="/assets/external/home-img-2.png"
+              alt="Image 2"
+              class="img-fluid img-hvr"
+            />
+          </div>
+          <div class="col-6 p-lg-2">
+            <img
+              src="/assets/external/home-img-3.png"
+              alt="Image 3"
+              class="img-fluid img-hvr"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <img
+          src="/assets/external/home-img-4.png"
+          alt="Image 4"
+          class="img-fluid mb-2 img-hvr"
+        />
+        <img
+          src="/assets/external/home-img-5.png"
+          alt="Image 5"
+          class="img-fluid img-hvr"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column gap-5 w-100 align-items-center my-4">
+    <div class="testimonials-heading">Patient Testimonials</div>
+    <div class="testimonial-card d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-4">
+      <div class="d-flex flex-column w-100 w-md-50 p-md-4 gap-2">
+        <div class="testimonial-text">
+          {{ testimonials[currentIndex].text }}
+        </div>
+        <div class="testimonial-author">
+          - {{ testimonials[currentIndex].author }}
+        </div>
+        <div class="d-flex gap-4 align-items-center">
+          <span style="font-size: 40px; cursor: pointer" (click)="prevTestimonial()">
+            &#8592;
+          </span>
+          <span style="font-size: 40px; cursor: pointer" (click)="nextTestimonial()">
+            &#8594;
+          </span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center p-4 w-100 w-md-50">
+        <img
+          [src]="testimonials[currentIndex].image"
+          alt="{{ testimonials[currentIndex].author }} Testimonial"
+          class="img-fluid testimonial-image"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="d-flex w-100 flex-column flex-md-row gap-5">
+    <div class="d-flex flex-column flex-md-row w-100 p-lg-5 ps-0">
+      <!-- Doctor Image Section -->
+      <div class="col-md-6 pe-0 pe-lg-5 d-flex">
+        <div class="doctor-img w-100">
+          <div class="shade-img w-100">
+            <div class="home-heading-text-4 text-center text-white p-3 p-lg-4">
+              Best Gastroenterologist & <br />Surgeon in Bangalore
+            </div>
+            <div class="bg-white" style="width: 80%; height: 3px"></div>
+            <div class="my-lg-4 my-3">
+              <button
+                class="btn-pink text-white"
+                (click)="onBookAnAppointmentBtnClick()"
+              >
+                Book an Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex flex-column gap-4 mb-2 ps-3">
+        <div class="d-flex flex-column gap-2">
+          <div class="home-heading-text-1 text-color-blue">
+            Dr. Sachin Subbaraya
+          </div>
+          <div class="font-24">
+            MBBS, MS (General Surgery), FIAGES, FMAS, <br />
+            Laser Proctology & EVLT Specialist
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="home-heading-text-1 text-color-pink">Make an Enquiry</div>
+          <div class="font-20">
+            Fill out the form to book appointment with a expert
+          </div>
+        </div>
+        <app-contact-form></app-contact-form>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

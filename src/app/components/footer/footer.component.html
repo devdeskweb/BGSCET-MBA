@@ -1,0 +1,71 @@
+<footer class="footer-bg-color border-top">
+  <!-- Desktop View -->
+  <div class="d-flex p-4 justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center gap-3 w-25">
+      <img src="assets/external/college-logo.png" class="w-100"/>
+      <div class="py-2 text-white">Adjacent to Mahalakshmi Metro Station, Mahalakshmipuram, West of Chord Road, Bengaluru -560 086, Karnataka</div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center gap-2 font-24 w-25">
+      <a routerLink="/about" class="text-white text-decoration-none">About Us</a>
+      <a routerLink="/people" class="text-white text-decoration-none">People</a>
+      <a routerLink="/academics" class="text-white text-decoration-none">Academics</a>
+      <a routerLink="/campus" class="text-white text-decoration-none">Campus life</a>
+      <a routerLink="/contact" class="text-white text-decoration-none">Contact</a>
+    </div>
+    <div class="contact-details-text justify-content-center align-items-center d-flex flex-column gap-5">
+      <div class="d-flex flex-column gap-3 text-white font-24">
+        <div class="fw-bold text-white">BGSCET | MBA</div>
+        <div>Contact : <a [href]="'tel:' + mobile" class="text-white text-decoration-none">{{mobile}}</a></div>
+        <div>Email : <a  [href]="'mailto:' + email" class="text-white text-decoration-none">{{email}}</a></div>
+      </div>
+      <!-- Social Icons -->
+      <div class="d-flex gap-2">
+        <a href="https://www.instagram.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/instagram-icon.png" alt="Instagram" /></a>
+        <a href="https://www.facebook.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/facebook-icon.png" alt="Facebook" /></a>
+        <a href="https://x.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/twitter-icon.png" alt="X" /></a>
+        <a href="https://in.linkedin.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/linkedin-icon.png" alt="LinkedIn" /></a>
+        <a href="https://mail.google.com/" target="_blank"><img class="w-50 w-sm-75" src="assets/external/gmail-icon.png" alt="Gmail" /></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile View -->
+  <div class="d-block d-lg-none px-3">
+    <div class="dr-name-text pt-3">Dr. Sachin Subbaraya</div>
+    <div class="bg-black my-2" style="width: 70%; height: 2px;"></div>
+    <ul class="list-unstyled ul-text">
+      <li><span class="ul-text-color">• Designation:</span> Consultant</li>
+      <li><span class="ul-text-color">• Department:</span> General and Gastrointestinal Surgery</li>
+      <li><span class="ul-text-color">• Qualification:</span> MBBS, MS (General Surgery), FIAGES, FMAS,<br>Laser Proctology & EVLT Specialist</li>
+    </ul>
+
+    <!-- Social Icons -->
+    <div class="d-flex flex-column gap-4 px-3 px-lg-0 py-2 position-absolute social-icon position-lg-relative">
+      <a href="https://www.instagram.com/" target="_blank"><img src="assets/external/social1332-emzk-200h.png" class="social-icon-img" width="40" alt="Instagram"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="assets/external/facebook1332-6pb-200h.png" class="social-icon-img" width="40" alt="Facebook"></a>
+      <a href="https://x.com/" target="_blank"><img src="assets/external/twitter11332-e52-200h.png" width="40" class="social-icon-img" alt="X"></a>
+      <a href="https://in.linkedin.com/" target="_blank"><img src="assets/external/linkedin31332-ptcn-200h.png" class="social-icon-img" width="40" alt="LinkedIn"></a>
+      <a href="https://mail.google.com/" target="_blank"><img src="assets/external/gmail1332-42z-200h.png" width="40" class="social-icon-img" alt="Gmail"></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="d-flex flex-column gap-2 pt-3 font-24">
+      <a routerLink="/about" class="text-dark text-decoration-none">About Me</a>
+      <a routerLink="/services" class="text-dark text-decoration-none">Services</a>
+      <a routerLink="/gallery" class="text-dark text-decoration-none">Gallery</a>
+      <a routerLink="/contact" class="text-dark text-decoration-none">Contact</a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-details-text d-flex flex-column gap-1 pt-3">
+      <div class="fw-bold">Dr. Sachin Subbaraya</div>
+      <a [href]="'tel:' + mobile" class="text-dark text-decoration-none">+91 7337774020</a>
+      <a [href]="'mailto:' + email" class="text-dark text-decoration-none">Dr.SachinSubbaraya@Gmail.Com</a>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer text-center mt-4">
+    <span class="font-20 text-white">copyrights @ BGSCET|MBA</span>
+  </div>
+</footer>

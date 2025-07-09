@@ -1,0 +1,110 @@
+.contact-image{
+    height: 55vh;
+    background-size: cover;
+    background-color: #00149875;
+    background-image: url(/assets/external/contact-screen.png);
+}
+.contact-text{
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.contact-heading-text-1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.text-color-pink {
+  color: rgba(238, 48, 145, 1)
+}
+.text-color-blue {
+  color: rgba(0, 26, 93, 1);
+}
+.bg-pink{
+  background-color: rgba(238, 48, 145, 1);
+}
+
+.btn-pink{
+  font-size: 26px;
+  padding: 6px 10px;
+  background-color: rgba(238, 48, 145, 1);
+}
+
+.doctor-img {
+  background-size: cover;
+  background-image: url(/assets/external/doctor-2.png);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.shade-img {
+  background-size: cover;
+  background-image: url(/assets/external/shade-1.png);
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-heading-text-1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.font-24{
+  font-size: 24px;
+}
+.home-heading-text-4{
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.font-20{
+  font-size: 20px;
+}
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+.whatsapp-fixed-icon img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .home-heading-text-1{
+    font-size: 30px;
+  }
+  .doctor-img {
+    height: 100%;
+    min-height: 450px;
+  }
+
+  .shade-img {
+    padding: 1rem;
+  }
+
+  .home-heading-text-4 {
+    font-size: 1.75rem;
+  }
+
+  .btn-pink {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-image {
+    height: 30vh;
+    background-position: center;
+  }
+}
