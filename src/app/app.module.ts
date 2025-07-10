@@ -4,7 +4,10 @@ import { BrowserModule } from '@angular/platform-browser'
 import { ComponentsModule } from './components/components.module'
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { PeopleComponent } from './pages/people/people.component';
+import { AcademicsComponent } from './pages/academics/academics.component';
+import { CampusComponent } from './pages/campus/campus.component'
 
 const routes: Routes = [
   {
@@ -14,8 +17,9 @@ const routes: Routes = [
   },
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
-  { path: 'services', loadChildren: () => import('./pages/services/services.module').then(m => m.ServicesModule) },
-  { path: 'gallery', loadChildren: () => import('./pages/gallery/gallery.module').then(m => m.GalleryModule) },
+  { path: 'people', loadChildren: () => import('./pages/people/people.module').then(m => m.PeopleModule) },
+  { path: 'academics', loadChildren: () => import('./pages/academics/academics.module').then(m => m.AcademicsModule) },
+  { path: 'campus', loadChildren: () => import('./pages/campus/campus.module').then(m => m.CampusModule) },
   { path: 'contact', loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule) },
   {
     path: '**',
