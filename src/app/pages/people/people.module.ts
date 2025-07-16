@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PeopleComponent } from './people.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ComponentsModule } from 'src/app/components/components.module';
+import { AdministrativeStaffComponent } from './administrative-staff/administrative-staff.component';
 
 const routes: Routes = [
   { path: '', component: PeopleComponent }
@@ -9,8 +11,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule.forChild(routes)
+    CommonModule,ComponentsModule, RouterModule.forChild(routes)
   ],
-  declarations: [PeopleComponent]
+  declarations: [PeopleComponent,AdministrativeStaffComponent]
 })
 export class PeopleModule { }
