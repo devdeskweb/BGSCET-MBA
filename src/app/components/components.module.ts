@@ -7,11 +7,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { AppointmentModalComponent } from './appointment-modal/appointment-modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { VisitCampusComponent } from './visit-campus/visit-campus.component';
 
 @NgModule({
-  declarations: [NavBarComponent, ContactFormComponent, FooterComponent, AppointmentModalComponent, CarouselComponent],
+  declarations: [NavBarComponent, ContactFormComponent, FooterComponent, AppointmentModalComponent, CarouselComponent, VisitCampusComponent],
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  exports: [NavBarComponent, ContactFormComponent, FooterComponent, CarouselComponent],
+  exports: [NavBarComponent, ContactFormComponent, FooterComponent, CarouselComponent, VisitCampusComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ComponentsModule {}
