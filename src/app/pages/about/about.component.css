@@ -1,89 +1,20 @@
 .about-hero {
-  height: 50vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      rgba(0, 20, 152, 0.46),
-      rgba(0, 20, 152, 0.46)
-    ),
-    url(/assets/external/about-img.png);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.about-hero-title {
-  font-size: clamp(2.5rem, 8vw, 4.375rem);
-  font-weight: 700;
+  background-image: url(/assets/external/about-screen.png);
 }
 
 .about-main-heading {
-  font-size: clamp(1.8rem, 5vw, 2rem);
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
-}
-
-.about-sub-heading {
-  font-size: clamp(1.2rem, 3vw, 1.3rem);
-  font-weight: 500;
-}
-
-.dr-info-label {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.dr-info-text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-.dr-name {
-  font-size: 1.75rem;
-  font-weight: 700;
   color: #001a5d;
 }
 
-.dr-designation {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.about-description-text {
-  background-color: #E8EAEF;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-}
-
-.text-primary-pink {
-  color: #ee3091;
-}
-
-.text-primary-blue {
-  color: #001a5d;
-}
-
-.bg-primary-pink {
-  background-color: #ee3091;
-}
-
-.btn-primary-blue {
-  font-size: 1.5rem;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.375rem;
+.bg-primary-blue {
   background-color: #001a5d;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
-
-.btn-primary-blue:hover {
-  background-color: #002e8a;
-}
-
 .whatsapp-fixed-icon {
   position: fixed;
   bottom: 1rem;
@@ -95,29 +26,4 @@
   width: 70px;
   height: auto;
   max-width: 100%;
-}
-
-.img-profile {
-  max-width: 60%;
-  height: auto;
-  display: block;
-  border-radius: 0.75rem;
-}
-
-@media (max-width: 767.98px) {
-  .about-hero {
-    height: 30vh;
-  }
-
-  .whatsapp-fixed-icon img {
-    width: 60px;
-  }
-
-  .img-profile {
-    max-width: 90%;
-  }
-
-  .about-description-text {
-    padding: 0 1rem;
-  }
 }
