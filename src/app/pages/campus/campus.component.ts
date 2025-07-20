@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { AppConstants } from 'src/app/constants/app-constants';
 
 @Component({
   selector: 'app-campus',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CampusComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  mobile = AppConstants.Mobile;
+  
+  constructor(private title: Title) {
+    this.title.setTitle('Campus Life')
   }
-
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }
