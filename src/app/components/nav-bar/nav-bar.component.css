@@ -99,3 +99,37 @@
     padding: 0.725rem;
   }
 } */
+/* Dropdown menu under People nav item */
+.nav-bar-top-features .dropdown {
+  position: relative;
+}
+
+.nav-bar-top-features .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.nav-bar-top-features .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-bar-top-features .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
