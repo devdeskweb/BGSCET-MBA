@@ -24,20 +24,28 @@
           Home
         </span>
         <span
-          routerLink="/about"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="pb-2 cursor-pointer text-nowrap"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
         >
-          About
+          <span>About</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/about">About Math</a></li>
+            <li><a class="dropdown-item" routerLink="/about/founder-president">Founder President</a></li>
+          </ul>
         </span>
         <span
           routerLink="/people"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="pb-2 cursor-pointer text-nowrap"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
         >
-          People
+          <span>People</span>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/people">Faculty</a></li>
+          <li><a class="dropdown-item" routerLink="/people/director-message">Director's Message</a></li>
+          <li><a class="dropdown-item" routerLink="/people/administrative-staff">Administrative Staff</a></li>
+          </ul>
         </span>
         <span
           routerLink="/academics"
