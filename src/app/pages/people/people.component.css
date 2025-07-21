@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -68,19 +68,27 @@ body {
   height: auto;
   display: block;
 }
+
+.faculty-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .faculty {
-  display: flex;
+  display: flex; /* ✅ FLEX HERE */
   flex-direction: column;
   gap: 40px;
 }
 
 .faculty-row {
-  display: flex;
+  display: flex;              /*  FLEX HERE */
   background-color: #f7f7f7;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .faculty-row img {
   width: 250px;
@@ -206,21 +214,22 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .faculty-row {
+    flex-direction: column;   /*  FLEX DIRECTION CHANGE */
+    align-items: center;
+    text-align: center;
   }
-  .nav-links {
-    flex-direction: column;
+
+  .faculty-row img {
     width: 100%;
+    height: auto;
   }
-  .cta-buttons {
-    flex-direction: column;
-  }
-  .footer-container {
-    flex-direction: column;
+
+  .faculty-row .info {
+    padding: 20px;
   }
 }
+
 
 .section-heading {
   font-size: 2rem;
@@ -231,4 +240,15 @@ body {
   border-bottom: 4px solid #0015a3;
   padding-bottom: 5px;
   margin: 40px auto 30px;
+}
+.faculty-heading {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  color: #2D2D91;
+  border-bottom: 4px solid #2D2D91;
+  display: inline-block;
+  padding-bottom: 10px;
 }

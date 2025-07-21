@@ -1,136 +1,125 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
 }
+
 .top-bar {
-  background: #3d0066;
+  background-color: #4b1773;
   color: white;
-  padding: 8px 20px;
-  font-size: 14px;
+  padding: 10px;
   text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
-.navbar {
+
+
+.top-header {
+  background-color: #2b1c53;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: right;
+}
+.site-header {
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
-  padding: 10px 20px;
-  border-bottom: 2px solid #ccc;
+  flex-wrap: wrap;
 }
-.logo-section {
+.logo img {
+  max-height: 50px;
+}
+.main-nav {
   display: flex;
-  align-items: center;
+  gap: 20px;
 }
-.logo-section img {
-  height: 50px;
-  margin-right: 10px;
-}
-.nav-links a {
-  margin: 0 12px;
+.main-nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: #000;
+  font-weight: bold;
 }
-.contact-btn button {
-  background: #3d0066;
-  color: white;
-  border: none;
-  padding: 6px 14px;
+.nav-cta {
+  margin-left: auto;
+}
+.contact-btn {
+  background-color: #2b1c53;
+  color: #fff;
+  padding: 10px 16px;
   border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 .advertisement {
-  background: #8a005f;
+  background-color: #b0006d;
   color: white;
   text-align: center;
   padding: 10px;
   font-weight: bold;
 }
-.banner img {
+.hero-image img {
   width: 100%;
+  height: auto;
   display: block;
 }
-.section-heading {
-  text-align: center;
-  color: #001498;
-  font-size: 35px;
-  margin: 40px 0 20px;
-  border-bottom: 3px solid #1e1e88;
-  display: inline-block;
-}
-.people-section {
-  max-width: 1000px;
+
+.faculty-section {
+  padding: 40px 20px;
+  max-width: 1200px;
   margin: auto;
-  padding: 20px;
 }
-.person-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;              /* ← increased gap for breathing space */
-  margin-bottom: 40px;    /* ← match spacing with faculty section */
-  background-color: #f7f7f7; /* ← light background like faculty-row */
+
+.faculty {
+  display: flex; /* ✅ FLEX HERE */
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faculty-row {
+  display: flex;              /*  FLEX HERE */
+  background-color: #f7f7f7;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  flex-wrap: wrap;
 }
 
-.person-card img {
+
+.faculty-row img {
   width: 250px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
 }
 
-.person-info {
+.faculty-row .info {
+  padding: 20px;
   flex: 1;
-  max-width: 800px;
 }
-.person-card h3 {
-  margin: 0;
-  color: #021175;       
+
+.faculty-row .info h3 {
+  color: #021175;
   font-size: 28px;
   margin-bottom: 5px;
 }
-.person-card h4 {
-  color: #7711b3;        
+
+.faculty-row .info h4 {
+  color: #021175;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.person-card p {
+
+.faculty-row .info p {
   font-size: 16px;
   color: #000000;
   line-height: 1.5;
-  text-align: justify;
-}
-.gsb-section {
-  background: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center;
-}
-.gsb-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 40px; /* space between cards */
-  justify-items: center;
-  padding: 40px 20px;
 }
 
-.gsb-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-.gsb-card h4 {
-  margin: 10px 0 4px;
-  color: #021175;
-  font-size: 26px ;
-}
-.gsb-card p {
-  font-size: 14px;
-  color: #4c4c4c;
-}
+
 /* CTA Section */
 .cta-section {
   background: linear-gradient(to right, #830f86, #a5127a);
@@ -221,4 +210,45 @@ body {
   padding: 15px;
   background: #0606d1;
   font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faculty-row {
+    flex-direction: column;   /*  FLEX DIRECTION CHANGE */
+    align-items: center;
+    text-align: center;
+  }
+
+  .faculty-row img {
+    width: 100%;
+    height: auto;
+  }
+
+  .faculty-row .info {
+    padding: 20px;
+  }
+}
+
+
+.section-heading {
+  font-size: 2rem;
+  color: #0015a3; /* or deep blue */
+  text-align: center;
+  font-weight: 800;
+  display: inline-block;
+  border-bottom: 4px solid #0015a3;
+  padding-bottom: 5px;
+  margin: 40px auto 30px;
+}
+.faculty-heading {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  color: #2D2D91;
+  border-bottom: 4px solid #2D2D91;
+  display: inline-block;
+  padding-bottom: 10px;
 }
