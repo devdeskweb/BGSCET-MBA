@@ -12,6 +12,7 @@
 .contact-heading-text-1{
   font-size: 40px;
   font-weight: 600;
+  border-bottom: solid 4px #ee3091;
 }
 
 .text-color-pink {
@@ -30,26 +31,10 @@
   background-color: rgba(238, 48, 145, 1);
 }
 
-.doctor-img {
+.students-img {
   background-size: cover;
-  background-image: url(/assets/external/doctor-2.png);
+  background-image: linear-gradient(180deg, rgba(8, 27, 96, 0) 9.12%, #03124A 95.04%), url(/assets/external/students-1.png);
   background-position: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex: 1;
-}
-
-.shade-img {
-  background-size: cover;
-  background-image: url(/assets/external/shade-1.png);
-  background-position: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 2rem;
 }
 
 .home-heading-text-1{
@@ -57,13 +42,11 @@
   font-weight: 600;
 }
 
-.font-24{
-  font-size: 24px;
-}
 .home-heading-text-4{
   font-size: 50px;
   font-weight: 600;
   line-height: 1.2;
+  border-bottom: solid 4px;
 }
 .font-20{
   font-size: 20px;
