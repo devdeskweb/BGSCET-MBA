@@ -33,24 +33,29 @@
           Home
         </span>
         <span
-          routerLink="/about"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="pb-2 cursor-pointer text-nowrap"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
         >
-          About
-        </span>  
-        <div class="dropdown pb-2 cursor-pointer text-nowrap">
-          <span class="dropdown-toggle">
-           People
-          </span>
+          <span>About</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/about">About Math</a></li>
+            <li><a class="dropdown-item" routerLink="/about/founder-president">Founder President</a></li>
+          </ul>
+        </span>
+        <span
+          routerLink="/people"
+          routerLinkActive="active-nav"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
+        >
+          <span>People</span>
           <ul class="dropdown-menu">
           <li><a class="dropdown-item" routerLink="/people">Faculty</a></li>
           <li><a class="dropdown-item" routerLink="/people/director-message">Director's Message</a></li>
           <li><a class="dropdown-item" routerLink="/people/administrative-staff">Administrative Staff</a></li>
           </ul>
-        </div>
-
+        </span>
         <span
           routerLink="/academics"
           routerLinkActive="active-nav"
