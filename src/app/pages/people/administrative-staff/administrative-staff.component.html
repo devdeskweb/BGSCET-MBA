@@ -1,0 +1,37 @@
+  <div class="people-page d-flex flex-column gap-5">
+    <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="staff-main-img"></div>
+  <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+    <div class="staff-heading">Administrative Staff</div>
+    <div class="w-75 d-flex flex-column justify-content-center p-4" *ngFor="let staff of adminStaffList">
+      <div class="staff d-flex gap-5" >
+        <img [src]="staff.image" class="rounded shadow-sm staff-img" alt="{{ staff.name }}">
+        <div class="d-flex flex-column gap-4">
+          <div class="d-flex flex-column gap-2 text-primary-blue">
+            <div class="fw-bold fs-1">{{ staff.name }}</div>
+            <div class="fs-4"><em>{{ staff.designation }}</em></div>
+          </div>
+          <div class="text-justify fs-5">{{ staff.content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column gap-5 justify-content-center align-items-center mb-4">
+    <div class="staff-heading">Graduate Student Body</div>
+    <div class="w-75 d-flex flex-wrap gap-4 justify-content-between">
+      <div class="student d-flex flex-column gap-4" *ngFor="let student of graduateStudentList">
+        <img [src]="student.image" class="rounded shadow-sm student-img" alt="{{ student.name }}">
+        <div class="d-flex flex-column gap-2 text-primary-blue text-center w-100">
+          <div class="fw-bold fs-3">{{ student.name }}</div>
+          <div class="fs-5 text-wrap text-muted">{{ student.designation }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
