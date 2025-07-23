@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { AppConstants } from 'src/app/constants/app-constants';
 
 @Component({
   selector: 'app-people-director',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleDirectorComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  mobile = AppConstants.Mobile;
+  
+  constructor(private title: Title) {
+    this.title.setTitle('People')
   }
-
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }

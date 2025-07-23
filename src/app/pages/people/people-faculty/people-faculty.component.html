@@ -1,93 +1,25 @@
-  <section class="hero-image">
-    <img src="assets\external\facultygroup.png" alt="BGSCET Faculty Group">
-  </section>
-
-  <section class="faculty-section">
-    <div style="text-align: center;">
-      <h2 class="section-heading">Faculty</h2>
-    </div>
-
-    <div class="faculty">
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-1.png" alt="Naveen Kumar G" />
-        <div class="info">
-          <h3>Naveen Kumar G</h3>
-          <h4>Director, BGS School Of Management</h4>
-          <p>Naveen is the founding Director of BGS School of Management. He is an economist and an institution builder working to accelerate the end of educational inequality in India. Previously, Naveen has spent a year at the Jameel Poverty Action Lab South Asian and two years at the University of California San Diego as a postdoctoral Scholar. His research examines the design, implementation and impact of education reforms. Naveen obtained a PhD in Economics from the University of Illinois Chicago in 2020 and a Master’s in Management from the London School of Economics in 2015. He graduated from Visvesvaraya Technological University with a degree in Engineering in 2012.</p>
+<div class="people-page d-flex flex-column gap-5">
+    <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="faculty-main-img"></div>
+  <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+    <div class="faculty-heading">Faculty</div>
+    <div class="w-75 d-flex flex-column justify-content-center p-4 mb-2" *ngFor="let faculty of facultyList">
+      <div class="faculty d-flex gap-5" >
+        <img [src]="faculty.image" class="rounded shadow-sm faculty-img" alt="{{ faculty.name }}">
+        <div class="d-flex flex-column gap-4">
+          <div class="d-flex flex-column gap-2 text-primary-blue">
+            <div class="fw-bold fs-1">{{ faculty.name }}</div>
+            <div class="fs-4"><em>{{ faculty.designation }}</em></div>
+          </div>
+          <div class="text-justify fs-5">{{ faculty.content }}</div>
         </div>
       </div>
-  
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-2.png" alt="Dr. Chakravarthy E. S" />
-        <div class="info">
-          <h3>Dr. Chakravarthy E. S</h3>
-          <h4>Distinguished in-house Professor</h4>
-          <p>Chakravarthy’s last corporate position was Vice-President & Global RMG Head at Tata Consultancy Services (TCS), one of the world’s largest IT services and consulting firms. He has been honored with the “Chanakya Award” for the best business leader in the IT sector, and has been honored with a Doctorate from Mysore Open University for his contributions to the field of education.</p>
-        </div>
-      </div>
-
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-3.png" alt="Prof. Lalitha Jagadish" />
-        <div class="info">
-          <h3>Prof. Lalitha Jagadish</h3>
-          <h4>Assistant Professor & Program Manager</h4>
-          <p>Lalitha Jagadish is a seasoned management professional with over two decades of experience across various service sectors. She has served in TATA Motors Ltd. and Primacy Industry India Ltd. She holds an MBA with a specialization in Marketing and HR from the T. A. Pai Management Institute (TAPMI) Manipal, Pursuing her PhD. In HRIS. Lalitha’s career spans roles such as Assistant Registrar at Adichunchanagiri University, where she coordinated university reports and documentation for statutory bodies, and Senior Manager at Primacy Industries, where she was instrumental in talent acquisition and training. Her academic contributions include serving as a Senior Assistant professor at Mangalore Institute of Technology and Engineering.</p>
-        </div>
-      </div>
-
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-4.png" alt="Prof. Dhananjai E.Rao" />
-        <div class="info">
-          <h3>Prof. Dhananjai E.Rao</h3>
-          <h4>Corporate Relations & Assistant Professor</h4>
-          <p>Dhananjai E Rao is an accomplished educator with over 18 years of experience in Data Analytics, Business Intelligence, and Strategic Management. He holds an MBA in Marketing/Finance and is currently pursuing a PhD in Finance. “His professional journey includes roles as a reporting lead at Unisys Global India, Assistant Manager at Ernst & Young and as an operations manager at Enzensa Knowledge Solutions, he has also contributed to academia as an Assistant Professor and Program Manager at ISBR business school and as an Assistant Professor at Rajarajeshwari College of Engineering” and has a publication in IEEE on credit card fraud detection using machine learning. Dhananjai’s expertise is further highlighted by his advanced Excel skills, strong writing abilities, and cross-cultural management experience.</p>
-        </div>
-      </div>  
-
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-5.png" alt="Prof. S. Sandhya" />
-        <div class="info">
-          <h3>Prof. S. Sandhya</h3>
-          <h4>Assistant Professor</h4>
-          <p>Sandhya is a dedicated research scholar with a strong academic background, currently pursuing her Doctor of Philosophy as a Part-Time Research Scholar at the NIT Andhra Pradesh. She holds a Master of Business Administration in HR and Marketing from NIT Karnataka, and a Master of Technology in Power and Industrial Drives from JNTU Anantapur. Sandhya’s software skills include proficiency in Python, R language, and Tableau, and she is known for her innovative teaching style that emphasizes practical knowledge and current trends. Sandhya’s profile reflects a blend of technical expertise, academic excellence, and a forward-thinking approach to education and research.</p>
-        </div>
-      </div>  
-
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-6.png" alt="Prof. Shalini P. R" />
-        <div class="info">
-          <h3>Prof. Shalini P. R</h3>
-          <h4>Assistant Professor</h4>
-          <p>Shalini is an MBA in Finance graduate with a solid background in banking operations and e-learning development. Academically, she holds a Master of Business Administration in Finance from JSS Centre for Management Studies and a Bachelor’s in Business Management from MMK and SDM College. Her technical skills include proficiency in Finacle Banking Software, MS Office, and Tally 9.</p>
-        </div>
-      </div>  
-
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-7.png" alt="Prof. Suneel Rao T.R" />
-        <div class="info">
-          <h3>Prof. Suneel Rao T.R</h3>
-          <h4>Assistant Professor</h4>
-          <p>Rao Suneel T R is a highly motivated Assistant Professor with expertise in Strategic Management, Advertising, and Brand Management for MBA students. He combines his rich corporate experience with academia to deliver insightful and impactful lessons. With an extensive career spanning roles in business development, marketing strategy, and procurement, he has worked with leading organizations such as Flipkart, Logitech, and JP Morgan Chase. His passion for teaching and management is complemented by excellent communication skills and a strong commitment to nurturing students’ growth while advancing institutional success​.</p>
-        </div>
-      </div>  
-         
-      <div class="faculty-row">
-        <img src="assets\external\Faculty-8.png" alt="Prof. Yashodha G" />
-        <div class="info">
-          <h3>Prof. Yashodha G</h3>
-          <h4>Assistant Professor</h4>
-          <p>Yashodha G is a dedicated Assistant Professor with over four years of teaching experience, specializing in Commerce and Management. Currently working at BGS College of Engineering and Technology, Department of MBA, she has taught a wide array of subjects, including Cost Accounting, Management Accounting, and Financial Reporting. Her academic journey includes an M.Com from Mount Carmel College and a KSET certification, with aspirations for a Ph.D. Reflecting her multifaceted abilities, she has coordinated cultural and academic events, presented research papers, and guided student projects. Yashodha’s commitment to education and her diverse professional achievements make her a valuable mentor for students​.</p>
-        </div>
-      </div>  
-
     </div>
-  </section>
-
-   <section class="cta-section">
-    <h2>COME VISIT OUR CAMPUS</h2>
-    <p>Are You Ready To Take The Next Step Toward Your Future Career?</p>
-    <div class="cta-buttons">
-      <button class="cta-btn pink">For Admission Click Here</button>
-      <button class="cta-btn pink">Schedule A Tour</button>
-    </div>
-  </section>
+  </div>
+</div>

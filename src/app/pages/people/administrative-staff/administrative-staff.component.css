@@ -1,224 +1,41 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.top-bar {
-  background: #3d0066;
-  color: white;
-  padding: 8px 20px;
-  font-size: 14px;
-  text-align: center;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-  padding: 10px 20px;
-  border-bottom: 2px solid #ccc;
-}
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-.logo-section img {
-  height: 50px;
-  margin-right: 10px;
-}
-.nav-links a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-.contact-btn button {
-  background: #3d0066;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 5px;
-}
-.advertisement {
-  background: #8a005f;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-.banner img {
-  width: 100%;
-  display: block;
-}
-.section-heading {
-  text-align: center;
-  color: #001498;
-  font-size: 35px;
-  margin: 40px 0 20px;
-  border-bottom: 3px solid #1e1e88;
-  display: inline-block;
-}
-.people-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-.person-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;              /* ← increased gap for breathing space */
-  margin-bottom: 40px;    /* ← match spacing with faculty section */
-  background-color: #f7f7f7; /* ← light background like faculty-row */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  flex-wrap: wrap;
+.text-primary-blue{
+  color: #021175;
 }
 
-.person-card img {
-  width: 250px;
+.whatsapp-fixed-icon {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.whatsapp-fixed-icon img {
+  width: 70px;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
+  max-width: 100%;
 }
-
-.person-info {
-  flex: 1;
-  max-width: 800px;
+.staff-main-img {
+  height: 60vh;
+  background-size: cover;
+  background-image: url(/assets/external/admin-group.png);
 }
-.person-card h3 {
-  margin: 0;
-  color: #021175;       
-  font-size: 28px;
-  margin-bottom: 5px;
+.staff-heading{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #001a5d;
+  border-bottom: 4px solid;
 }
-.person-card h4 {
-  color: #7711b3;        
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.person-card p {
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.5;
+.text-justify {
   text-align: justify;
 }
-.gsb-section {
-  background: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center;
+.staff-img{
+  width: 400px;
+  height: 500px;
 }
-.gsb-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 40px; /* space between cards */
-  justify-items: center;
-  padding: 40px 20px;
+.student-img{
+  width: 300px;
+  height: 400px;
 }
-
-.gsb-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-.gsb-card h4 {
-  margin: 10px 0 4px;
-  color: #021175;
-  font-size: 26px ;
-}
-.gsb-card p {
-  font-size: 14px;
-  color: #4c4c4c;
-}
-/* CTA Section */
-.cta-section {
-  background: linear-gradient(to right, #830f86, #a5127a);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-.cta-section h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.cta-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.cta-btn {
-  background: #ff4ea1;
-  color: white;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-}
-.cta-btn:hover {
-  background: #d93b8d;
-}
-
-/* Footer */
-.footer {
-  background: #181818;
-  color: white;
-  padding: 40px 20px 0;
-}
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-.footer-left, .footer-center, .footer-right {
-  flex: 1;
-  min-width: 220px;
-}
-.footer-left img {
-  height: 50px;
-  margin-bottom: 10px;
-}
-.footer-center ul {
-  list-style: none;
-}
-.footer-center ul li {
-  margin-bottom: 8px;
-}
-.footer-center ul li a {
-  color: white;
-  text-decoration: none;
-}
-.footer-right p {
-  margin-bottom: 8px;
-}
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 15px;
-  background: #0606d1;
-  font-size: 14px;
+.student{
+  width: 300px;
 }

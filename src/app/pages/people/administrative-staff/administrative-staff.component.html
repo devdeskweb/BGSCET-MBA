@@ -1,118 +1,37 @@
-  <!-- Banner Image -->
-  <section class="banner">
-    <img src="assets\external\admin-group.png" alt="Admin Staff Banner"/>
-  </section>
-
-  <!-- Administrative Staff Section -->
-  <section class="people-section">
-    <div style="text-align: center;">
-      <h2 class="section-heading">Administrative Staff</h2>
-    </div>
-
-    <div class="person-card">
-      <img src="assets\external\staff-1.png" alt="Kanaka G V" width="561" height="704" />
-      <div class="person-info">
-        <h3>Kanaka G V</h3>
-        <h4>Training And Placement Coordinator</h4>
-        <p>Kanaka is a dedicated Training and Placement Coordinator, specializing in organizing successful placement programs, fostering employer relationships, and providing career guidance to students. With a proven track record in helping students secure job opportunities, Kanaka leverages data to enhance placement strategies. Known for strong communication, organizational skills, and industry knowledge, Kanaka is committed to facilitating student success by creating tailored career opportunities that meet both student and employer needs.</p>
+  <div class="people-page d-flex flex-column gap-5">
+    <a
+    [href]="'https://wa.me/' + mobile"
+    class="text-black text-decoration-none whatsapp-fixed-icon m-3"
+    target="_blank"
+  >
+    <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
+  </a>
+  <div class="staff-main-img"></div>
+  <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+    <div class="staff-heading">Administrative Staff</div>
+    <div class="w-75 d-flex flex-column justify-content-center p-4" *ngFor="let staff of adminStaffList">
+      <div class="staff d-flex gap-5" >
+        <img [src]="staff.image" class="rounded shadow-sm staff-img" alt="{{ staff.name }}">
+        <div class="d-flex flex-column gap-4">
+          <div class="d-flex flex-column gap-2 text-primary-blue">
+            <div class="fw-bold fs-1">{{ staff.name }}</div>
+            <div class="fs-4"><em>{{ staff.designation }}</em></div>
+          </div>
+          <div class="text-justify fs-5">{{ staff.content }}</div>
+        </div>
       </div>
     </div>
-
-    <div class="person-card">
-      <img src="assets\external\staff-2.png" alt="Gunasheela S" />
-      <div class="person-info">
-        <h3>Gunasheela S</h3>
-        <h4>Senior Program Coordinator</h4>
-        <p>Gunasheela serves as the Program Coordinator for the MBA program at BGSCET and also functions as a Teaching Assistant to the Program Director. She is an esteemed alumna of BGS Institute of Management, having graduated from this very institution. Her professional journey from a student to a key administrative and academic role at BGSCET reflects her profound dedication to the institution’s mission and values. In her dual role, Gunasheela plays a crucial part in managing program operations and supporting the Program Director, contributing significantly to the academic and administrative success of the MBA program.</p>
+  </div>
+  <div class="d-flex flex-column gap-5 justify-content-center align-items-center mb-4">
+    <div class="staff-heading">Graduate Student Body</div>
+    <div class="w-75 d-flex flex-wrap gap-4 justify-content-between">
+      <div class="student d-flex flex-column gap-4" *ngFor="let student of graduateStudentList">
+        <img [src]="student.image" class="rounded shadow-sm student-img" alt="{{ student.name }}">
+        <div class="d-flex flex-column gap-2 text-primary-blue text-center w-100">
+          <div class="fw-bold fs-3">{{ student.name }}</div>
+          <div class="fs-5 text-wrap text-muted">{{ student.designation }}</div>
+        </div>
       </div>
     </div>
-    
-    <div class="person-card">
-      <img src="assets\external\staff-3.png" alt="Vinay Kumar Y S" />
-      <div class="person-info">
-        <h3>Vinay Kumar Y S</h3>
-        <h4>Accountant</h4>
-        <p>Vinay Kumar Y.S. serves as the Accountant for the MBA program at BGSCET, bringing with him 2.9 years of experience in the field. In this role, Vinay is responsible for managing and overseeing all financial transactions and accounting activities related to the MBA program. His meticulous approach ensures accurate financial reporting and effective budget management, which are crucial to the program’s financial stability and operational efficiency. Vinay’s expertise and attention to detail significantly contribute to maintaining the program’s financial integrity and adherence to institutional policies.</p>
-      </div>
-    </div>
-
-    <div class="person-card">
-      <img src="assets\external\staff-4.png" alt="Tejashree B S" />
-      <div class="person-info">
-        <h3>Tejashree B S</h3>
-        <h4>Intern</h4>
-        <p>Tejashree is currently serving as an intern within the MBA program at BGSCET. In this capacity, she actively contributes to various administrative tasks, gaining valuable hands-on experience in the field of business administration. Her role involves supporting the program’s daily operations, assisting with Program Director, Program Manager, Program Coordinator, and engaging in various initiatives that enhance the overall experience. Tejashree’s internship is an integral part of her professional development, and her contributions are instrumental in supporting the program’s objectives and operations.</p>
-      </div>
-    </div>
-
-    <div class="person-card">
-      <img src="assets\external\staff-5.png" alt="Namrata V Hubli" />
-      <div class="person-info">
-        <h3>Namrata V Hubli</h3>
-        <h4>Program Coordinator & Research Assistant</h4>
-        <p>Namrata V. Hubli serves as the Program Coordinator for the MBA program at BGSCET and also functions as a Research Assistant to the Program Director. She is a dynamic and analytical MSc Economics graduate from Dr. B.R. Ambedkar School of Economics, Bengaluru. With a strong background in quantitative and qualitative analysis, she brings expertise in tools such as Python, R, Power BI, and STATA. Namrata’s academic achievements are matched by her professional experience as a Research Assistant at 60 Decibels, where she excelled in data collection and analysis. Passionate about impactful research, she has explored areas like sustainable development, game theory, and macroeconomic dynamics. Her interests extend beyond academics to include Taekwondo, photography, and community engagement​.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="gsb-section">
-    <div style="text-align: center;">
-      <h2 class="section-heading">Graduate Student Body</h2>
-    </div>
-    
-    <div class="gsb-grid">
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-1.png" alt="Yashas D">
-        <h4>Yashas D</h4>
-        <p>President</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-2.png" alt="Manasa D">
-        <h4>Manasa D</h4>
-        <p>Vice-president (GSB) & HR Club Secretary</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-3.png" alt="Revathi P">
-        <h4>Revathi P</h4>
-        <p>Secretary, Academic Affairs (GSB) & Spiritual Club Secretary</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-4.png" alt="Darshan Gowda H K">
-        <h4>Darshan Gowda H K</h4>
-        <p>Secretary, Industry and Student Affairs (GSB)</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-5.png" alt="Vikas G">
-        <h4>Vikas G</h4>
-        <p>Treasurer (GSB), Finance & Consulting Club Secretary,Vice president of all clubs, Placement committee officer for industry relations</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-6.png" alt="Disha P R">
-        <h4>Disha P R</h4>
-        <p>President of Student Clubs & Adventurous Club Secretary</p>
-      </div>
-
-      <div class="gsb-card">
-        <img src="assets\external\Graduate.Student.Body-7.png" alt="Likith B">
-        <h4>Likith B</h4>
-        <p>Competitive Exam Club Secretary</p>
-      </div>
-    </div>
-    <!-- more cards -->
-  </section>
-
-   <section class="cta-section">
-    <h2>COME VISIT OUR CAMPUS</h2>
-    <p>Are You Ready To Take The Next Step Toward Your Future Career?</p>
-    <div class="cta-buttons">
-      <button class="cta-btn pink">For Admission Click Here</button>
-      <button class="cta-btn pink">Schedule A Tour</button>
-    </div>
-  </section>
-
-  
+  </div>
+</div>

@@ -12,8 +12,8 @@ const routes: Routes = [
     path: '',
     component: PeopleComponent, // optional parent container
     children: [
-      { path: '', component: PeopleFacultyComponent },
-      { path: 'director-message', component: PeopleDirectorComponent },
+      { path: '', component:PeopleDirectorComponent },
+      { path: 'faculty', component: PeopleFacultyComponent},
       { path: 'administrative-staff', component: AdministrativeStaffComponent }
     ]
   }

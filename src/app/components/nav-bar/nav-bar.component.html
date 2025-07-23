@@ -44,25 +44,27 @@
           </ul>
         </span>
         <span
-          routerLink="/people"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
           class="dropdown pb-2 cursor-pointer text-nowrap"
         >
           <span>People</span>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" routerLink="/people">Faculty</a></li>
-          <li><a class="dropdown-item" routerLink="/people/director-message">Director's Message</a></li>
-          <li><a class="dropdown-item" routerLink="/people/administrative-staff">Administrative Staff</a></li>
+            <li><a class="dropdown-item" routerLink="/people">Director's Message</a></li>
+            <li><a class="dropdown-item" routerLink="/people/faculty">Faculty</a></li>
+            <li><a class="dropdown-item" routerLink="/people/administrative-staff">Administrative Staff</a></li>
           </ul>
         </span>
         <span
-          routerLink="/academics"
           routerLinkActive="active-nav"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="pb-2 cursor-pointer text-nowrap"
+          class="dropdown pb-2 cursor-pointer text-nowrap"
         >
-          Academics
+          <span>Academics</span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/academics">MBA in BGSCET</a></li>
+            <li><a class="dropdown-item" routerLink="/academics/explore-program">Explore Program</a></li>
+          </ul>
         </span>
         <span
           routerLink="/campus"
