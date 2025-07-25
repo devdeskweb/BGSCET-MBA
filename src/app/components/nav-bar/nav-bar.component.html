@@ -1,7 +1,7 @@
 <div class="nav-head d-flex flex-column position-relative">
   <!-- Contact Info Top -->
-  <div *ngIf="!canHide" class="nav-bar-contact-email d-flex justify-content-center align-items-center">
-    <div class="nav-bar-text-contact-email text-white d-flex flex-md-row flex-lg-row flex-column">
+  <div *ngIf="!canHide" class="d-flex justify-content-center align-items-center p-3 bg-brinjal-color">
+    <div class="fs-5 text-white d-flex flex-md-row flex-lg-row flex-column">
       <div>
         Contact:
         <a [href]="'tel:' + mobile" class="text-decoration-none text-white">{{mobile}}</a>
@@ -78,7 +78,7 @@
     </div>
 
     <!-- Contact Button -->
-    <div class="nav-bar-contact-me d-none d-lg-flex">
+    <div class="nav-bar-contact-me d-none d-lg-flex bg-brinjal-color">
       <button routerLink="/contact" class="nav-bar-text-contact text-nowrap text-white">
         Contact Us
       </button>
@@ -155,8 +155,8 @@
   </div>
 
   <!-- Contact Info Bottom -->
-  <div *ngIf="!canHide" class="nav-bar-admission d-flex justify-content-center align-items-center">
-    <div class="nav-bar-text-admission text-white d-flex flex-md-row flex-lg-row flex-column">
+  <div *ngIf="!canHide" class="p-3 bg-brown-color d-flex justify-content-center align-items-center">
+    <div class="fs-5 text-white d-flex flex-md-row flex-lg-row flex-column">
       <span>Advertisement : Admission open by 2025 by BGSCET</span>
     </div>
   </div>

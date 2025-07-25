@@ -25,17 +25,14 @@
   color: #001a5d;
   border-bottom: 4px solid;
 }
-.text-justify {
-  text-align: justify;
-}
 .staff-img{
   width: 400px;
   height: 500px;
 }
 .student-img{
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
 }
 .student{
-  width: 300px;
+  width: 400px;
 }

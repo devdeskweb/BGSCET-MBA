@@ -631,3 +631,24 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Poppins; }
+.bg-brinjal-color{
+  background: #401F68;
+}
+.bg-brown-color{
+  background: #7B0053;
+}
+.text-heading-color{
+  color: #001498;
+}
+.bg-blue-color{
+  background: #001498;
+}
+.text-justify{
+  text-align: justify !important;
+}
+.underline{
+  border-bottom: solid 4px;
+}
+.w-fit{
+  width: fit-content !important;
+}

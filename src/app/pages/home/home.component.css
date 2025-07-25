@@ -60,11 +60,6 @@
   font-weight: 500;
 }
 
-.about-section-home {
-  padding: 4rem 2rem;
-  background-color: #fff;
-}
-
 .home-institute-info {
   font-size: 20px;
   font-weight: 400;
@@ -98,10 +93,10 @@
   background: linear-gradient(270deg, #572E88 0%, #7B0053 100%);
 }
 
-.home-heading{
-  font-size: 2.5rem;
+/* .home-heading{
   font-weight: 600;
-}
+} */
+
 .home-prgm-img{
   height: 70%;
 }
@@ -112,9 +107,6 @@
   line-height: 1.7;
 }
 
-.home-industry-list{
-  width: 80%;
-}
 
 .home-industry-list-item{
   width: 40%;

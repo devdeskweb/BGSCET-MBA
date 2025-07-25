@@ -7,34 +7,19 @@
   border-bottom: 0.25rem solid black;
 }
    
-.w-85 {
-  width: 85%;
-}
-   
 .nav-bar-top-features {
   gap: 3.125rem;
   font-size: 1.3rem;
 }
-   
-.nav-bar-contact-email {
-  padding: 1rem;
-  background-color: rgba(0, 20, 152, 1);
-}
-   
+
 .nav-bar-text-contact-email, nav-bar-text-admission {
   font-size: 1rem;
   font-weight: 600;
 }
 
-.nav-bar-admission {
-  padding: 1rem;
-  background-color: #7B0053;
-}
-   
 .nav-bar-contact-me {
   padding: 0.75rem;
   border-radius: 0.5rem;
-  background-color: rgba(17, 40, 75, 1);
 }
    
 .nav-bar-text-contact {

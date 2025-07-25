@@ -1,25 +1,25 @@
-<div class="home-page d-flex flex-column w-100">
+<div class="d-flex flex-column w-100">
   <app-carousel class="d-none d-md-block"></app-carousel>
-    <div class="stats-section d-flex justify-content-around align-items-center p-3">
-      <div class="d-flex flex-column justify-content-center align-items-center w-25">
-        <div class="stat-value d-flex justify-content-center align-items-center">
-          <div class="college-icon"></div>
-        </div>
-        <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
+  <div class="stats-section d-flex justify-content-around align-items-center p-3">
+    <div class="d-flex flex-column justify-content-center align-items-center w-25">
+      <div class="stat-value d-flex justify-content-center align-items-center">
+        <div class="college-icon"></div>
       </div>
-      <div class="d-flex flex-column justify-content-center align-items-center w-25">
-        <div class="stat-value d-flex justify-content-center align-items-center">
-          <div class="college-icon"></div>
-        </div>
-        <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
-      </div>
-      <div class="d-flex flex-column justify-content-center align-items-center w-25">
-        <div class="stat-value d-flex justify-content-center align-items-center">
-          <div class="graduation-icon"></div>
-        </div>
-        <div class="stat-label text-center">Candidates to clear PGCET/KMAT/MAT/CAT</div>
-      </div>
+      <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
     </div>
+    <div class="d-flex flex-column justify-content-center align-items-center w-25">
+      <div class="stat-value d-flex justify-content-center align-items-center">
+        <div class="college-icon"></div>
+      </div>
+      <div class="stat-label text-center">2 Years Full time Affiliated to Visvesvaraya Technological University</div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center w-25">
+      <div class="stat-value d-flex justify-content-center align-items-center">
+        <div class="graduation-icon"></div>
+      </div>
+      <div class="stat-label text-center">Candidates to clear PGCET/KMAT/MAT/CAT</div>
+    </div>
+  </div>
   <a
     [href]="'https://wa.me/' + mobile"
     class="text-black text-decoration-none whatsapp-fixed-icon m-3"
@@ -27,40 +27,32 @@
   >
     <img src="assets/external/whatsappicon.png" width="90" alt="WhatsApp" />
   </a>
-  <div
-    class="px-4 py-5 px-md-5 about-section-home d-flex flex-column justify-content-center gap-4 align-items-center"
-  >
-    <div
-      class="d-flex flex-column gap-2 justify-content-center align-items-center"
-    >
-      <div class="home-heading text-primary-blue">About the Institute</div>
-      <div class="bg-primary-blue" style="width: 100%; height: 3px"></div>
+  <div class="px-4 py-5 px-md-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+      <div class="underline fw-bold fs-1 text-heading-color">About the Institute</div>
     </div>
-    <div class="d-flex flex-column gap-4 align-items-center" style="width: 80%;">
+    <div class="d-flex flex-column gap-4 p-5 align-items-center">
       <div class="d-flex flex-column-reverse flex-md-row gap-4 pt-2 justify-content-center align-items-center w-100">
-        <div class="home-institute-info w-100 w-md-50 text-md-start">
+        <div class="text-justify fs-4 w-100 w-md-50 text-md-start d-flex flex-column gap-2 align-items-center">
           <p>
             Sri Adichunchanagiri Mahasamsthana Math is a spiritual and social centre with a history of over 1800 years. It has 500+ educational institutions that educate more than 200,000 students. Most institutions are located in rural parts of the country and offer education from kindergarten to PhD.
           </p>
           <p>
             BGS College of Engineering and Technology (BGSCET) is a unit of Sri Adichunchanagiri Shikshana Trust, founded in 2022. It is located in west Bangalore, home of iconic landmarks such as the Indian Institute of Science, the World Trade Centre, and the ISKCON Temple. The institution is easily accessible by Namma Metro and Majestic Bus Station, City, and Yeshwantpur railway junctions.
           </p>
-          <button class="btn-blue text-white" (click)="onBookAnAppointmentBtnClick()">
+          <button class="bg-blue-color rounded-2 px-4 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
             For Admission Click here
           </button>
         </div>
         <video width="480" height="360" controls autoplay muted loop>
           <source src="assets/external/sample-video-3.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>        
+        </video>
       </div>
     </div>
   </div>
   <div class="d-flex flex-column gap-4 p-4 ps-0 vh-100 home-section">
-    <div class="d-flex flex-column gap-2 text-white align-items-center">
-      <div class="home-heading">About the program</div>
-      <div class="bg-white" style="width: 25%; height: 3px"></div>
-    </div>
+    <div class="underline fw-bold fs-1 text-white m-auto">About the program</div>
     <div class="d-flex">
       <div>
         <img src="/assets/external/home-prgm-img.png" alt="Program Image" class="home-prgm-img"/>
@@ -74,36 +66,30 @@
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-4 p-4 justify-content-center align-items-center">
-    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-      <div class="home-heading text-primary-blue">Industry-Relevant Specializations</div>
-      <div class="bg-primary-blue w-100" style="height: 3px"></div>
-    </div>
-    <div class="d-flex p-3 justify-content-center gap-3 home-industry-list">
-      <div class="d-flex flex-column gap-1 home-industry-list-item">
+  <div class="d-flex flex-column gap-5 p-5 justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color">Industry-Relevant Specializations</div>
+    <div class="d-flex justify-content-center gap-4 w-100">
+      <div class="d-flex flex-column gap-2 w-50">
         <img
           src="/assets/external/mba-img-1.png"
-          alt="Image 1"
+          alt="Image 1" class="w-100"
         />
-        <div class="btn-grey fs-4 text-center p-2">General MBA</div>
+        <div class="btn-grey fs-4 text-center p-3">General MBA</div>
       </div>
-      <div class="d-flex flex-column gap-1 home-industry-list-item">
+      <div class="d-flex flex-column gap-2 w-50">
         <img
           src="/assets/external/mba-img-2.png"
-          alt="Image 2"
+          alt="Image 2" class="w-100"
         />
-        <div class="btn-grey fs-4 text-center p-2">MBA in Digital Marketing</div>
+        <div class="btn-grey fs-4 text-center p-3">MBA in Digital Marketing</div>
       </div>
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-4 p-4 justify-content-center align-items-center">
-    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-      <div class="home-heading text-primary-blue">Campus Life</div>
-      <div class="bg-primary-blue w-100" style="height: 3px"></div>
-    </div>
-    <div class="d-flex flex-column gap-3 justify-content-center align-items-center">
-      <div class="d-flex gap-3 w-75">
+  <div class="d-flex flex-column gap-5 p-5 pt-0 justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color">Campus Life</div>
+    <div class="d-flex flex-column gap-3 justify-content-center align-items-center px-5">
+      <div class="d-flex gap-3">
         <div class="d-flex flex-column w-50 justify-content-between">
           <img src="assets/external/home-cl-1.png" alt="Image 1" class="w-100"/>
           <img src="assets/external/home-cl-2.png" alt="Image 2" class="w-100" />
@@ -112,26 +98,23 @@
           <img src="assets/external/home-cl-3.png" alt="Image 3" class="w-100"/>
         </div>
       </div>
-      <div class="w-75">
+      <div class="w-100">
         <img src="assets/external/home-cl-4.png" alt="Image 4" class="w-100"/>
       </div>
     </div>
   </div>
 
   <div class="d-flex gap-5 my-4 justify-content-center align-items-center">
-    <button class="btn-blue fs-3 text-white" (click)="onBookAnAppointmentBtnClick()">
+    <button class="bg-blue-color rounded-2 px-5 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
       For Admission Click here
     </button>
-    <button class="btn-blue fs-3 text-white" (click)="onBookAnAppointmentBtnClick()">
+    <button class="bg-blue-color rounded-2 px-5 py-3 fs-4 fw-bold text-white" (click)="onBookAnAppointmentBtnClick()">
       View More
     </button>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-4 my-3 justify-content-center align-items-center home-section">
-    <div class="d-flex flex-column gap-2 text-white align-items-center">
-      <div class="home-heading">Campus Placement</div>
-      <div class="bg-white w-100" style="height: 3px"></div>
-    </div>
+  <div class="d-flex flex-column gap-5 p-4 my-5 justify-content-center align-items-center home-section">
+    <div class="underline fw-bold fs-1 text-white">Campus Placement</div>
     <div class="d-flex gap-5 w-75 justify-content-center align-items-center">
       <div class="rounded-2 bg-white d-flex justify-content-center align-items-center company-logo">
         <img src="assets/external/tata-logo.png" alt="TATA" class="w-50"/>
@@ -148,12 +131,9 @@
     </div>
   </div>
 
-  <div class="d-flex flex-column gap-5 p-4 my-3 justify-content-center align-items-center">
-    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-      <div class="home-heading text-primary-blue">Our Achievements</div>
-      <div class="bg-primary-blue w-100" style="height: 3px"></div>
-    </div>
-    <div class="d-flex w-75 gap-4">
+  <div class="d-flex flex-column gap-5 p-5 pt-0 justify-content-center align-items-center">
+    <div class="underline fw-bold fs-1 text-heading-color">Our Achievements</div>
+    <div class="d-flex gap-4">
       <div class="w-50">
         <img src="assets/external/home-achieve-img.png" alt="Image 4" class="w-100"/>
       </div>
@@ -167,10 +147,7 @@
   </div>
 
   <div class="d-flex flex-column gap-5 w-100 align-items-center my-4">
-    <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
-      <div class="home-heading text-primary-blue">Student Testimonial</div>
-      <div class="bg-primary-blue w-100" style="height: 3px"></div>
-    </div>
+    <div class="underline fw-bold fs-1 text-heading-color">Student Testimonial</div>
     <div class="testimonial-card d-flex flex-column-reverse flex-md-row justify-content-center align-items-center p-4">
       <div class="d-flex flex-column w-100 w-md-50 p-md-4 gap-2">
         <div class="testimonial-text">
@@ -201,10 +178,9 @@
     <div class="d-flex flex-column flex-md-row w-100 p-lg-5 ps-lg-0">
       <div class="col-md-6 pe-0 pe-lg-5 d-flex">
         <div class="d-flex flex-column align-items-center justify-content-end students-img w-100 py-4">
-          <div class="home-heading-text-4 text-center text-white p-3 p-lg-4">
+          <div class="underline fw-bold fs-1 text-center text-white p-3 p-lg-4">
             Join BGSCET | MBA
           </div>
-          <div class="bg-white" style="width: 55%; height: 3px"></div>
           <div class="my-lg-4 my-3">
             <button
               class="btn-pink text-white"

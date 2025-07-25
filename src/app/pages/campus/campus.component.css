@@ -35,6 +35,12 @@
   width: 90%;
 }
 .item{
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
+}
+.h-400{
+  height: 400px !important;
+}
+.h-600{
+  height: 600px !important;
 }
