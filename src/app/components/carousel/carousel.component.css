@@ -11,11 +11,11 @@
 }
 
 .home-image-1 {
-  background-image: url('/assets/external/home-screen-1.png');
+  background-image: url('/assets/external/carousel-gradient-1.png');
 }
 
 .home-image-2 {
-  background-image: url('/assets/external/home-screen-2.png');
+  background: #FDFAF3;
 }
 
 .home-image-3 {
@@ -33,112 +33,41 @@
 }
 
 .dot-box {
-  bottom: 1rem;
+  bottom: 1.5rem;
+}
+.carousel-img-1{
+  width: 400px;
+  height: 430px;
+}
+.carousel-img-2{
+  width: 250px;
+  height: 350px;
 }
 
-/* 
-@media (min-width: 768px) {
-  .home-img-text-1 {
-    font-size: 28px;
-  }
-  .home-img-content {
-    width: 60%;
-    padding-left: 3rem;
-  }
-  .btn-blue {
-    font-size: 30px;
-    padding: 6px 12px;
-  }
-  .font-24 {
-    font-size: 1.25rem;
-  }
-  .dr-name-text {
-    font-size: 50px;
-    text-align: left;
-  }
-  .ul-text {
-    font-size: 30px;
-  }
+.circle-bg{
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
 }
-
-@media (max-width: 768px) {
-  .home-image {
-    background-image: linear-gradient(to right bottom, #00a8ff24, #1d799c69);
-    position: relative;
-    padding: 0px 1.5rem !important;
+.star{
+  width: 30px;
+}
+.rotating-circle-text {
+  animation: rotateCircle 10s linear infinite;
+}
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
   }
-  .home-image-container {
-    min-height: 430px;
-  }
-  .info-wrapper {
-    position: relative;
-    transform: translateY(25%);
-  }
-  .bg-black {
-    width: 100%;
-  }
-  .ul-text {
-    margin: 0px;
-  }
-  .carousal-img {
-    width: 450px;
-    position: absolute;
-    z-index: -1;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-@media (min-width: 1024px) {
-  .home-img-text-1 {
-    font-size: 28px;
-  }
-  .home-img-content {
-    width: 45%;
-    padding-left: 3rem;
-  }
-  .btn-blue {
-    font-size: 30px;
-    padding: 6px 12px;
-  }
-  .font-24 {
-    font-size: 1.25rem;
-  }
-  .dr-name-text {
-    font-size: 50px;
-    text-align: left;
-  }
-  .ul-text {
-    font-size: 30px;
-  }
+.clip-path{
+      clip-path: polygon(100% 4.364%,100% 4.364%,99.935% 3.656%,99.748% 2.984%,99.449% 2.358%,99.047% 1.787%,98.554% 1.278%,97.978% .842%,97.331% .487%,96.623% .222%,95.863% .057%,95.062% 0%,46.914% 0%,46.914% 0%,46.113% .057%,45.353% .222%,44.644% .487%,43.997% .842%,43.422% 1.278%,42.928% 1.787%,42.527% 2.358%,42.227% 2.984%,42.04% 3.656%,41.975% 4.364%,41.975% 10.562%,41.975% 10.562%,41.911% 11.27%,41.724% 11.941%,41.424% 12.567%,41.023% 13.139%,40.529% 13.647%,39.954% 14.083%,39.306% 14.438%,38.598% 14.703%,37.838% 14.868%,37.037% 14.925%,4.938% 14.925%,4.938% 14.925%,4.137% 14.982%,3.377% 15.148%,2.669% 15.412%,2.022% 15.767%,1.446% 16.203%,.953% 16.712%,.551% 17.284%,.252% 17.91%,.065% 18.581%,0% 19.289%,0% 95.636%,0% 95.636%,.065% 96.344%,.252% 97.016%,.551% 97.642%,.953% 98.213%,1.446% 98.722%,2.022% 99.158%,2.669% 99.513%,3.377% 99.778%,4.137% 99.943%,4.938% 100%,95.062% 100%,95.062% 100%,95.863% 99.943%,96.623% 99.778%,97.331% 99.513%,97.978% 99.158%,98.554% 98.722%,99.047% 98.213%,99.449% 97.642%,99.748% 97.016%,99.935% 96.344%,100% 95.636%,100% 4.364%);
 }
-
-@media (max-width: 1260px) {
-  .dr-name-text {
-    font-size: 30px;
-  }
-  .ul-text {
-    font-size: 20px;
-  }
-  .btn-blue {
-    font-size: 24px;
-    padding: 5px 10px;
-  }
-  .carousal-img {
-    width: 300px;
-  }
+.top-badge{
+  width: 160px;
+  transform: translate(0px, 25%);
 }
-
-@media (min-width: 1260px) {
-  .dr-name-text {
-    font-size: 40px;
-  }
-  .ul-text {
-    font-size: 24px;
-  }
-  .btn-blue {
-    font-size: 24px;
-    padding: 6px 12px;
-  }
-  .carousal-img {
-    width: 300px;
-  }
-} */
